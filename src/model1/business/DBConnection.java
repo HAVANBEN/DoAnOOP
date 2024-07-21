@@ -9,7 +9,7 @@ public class DBConnection {
 	private static DBConnection instance;
 	//Doi tuong ket noi toi MySQL
 	private Connection conn;
-	private String ipadd = "192.168.1.249";
+	private String ipadd = "192.168.1.148";
 	private String port = "3306";
 	private String database = "qlsv";
 	private String username = "root";
@@ -21,11 +21,9 @@ public class DBConnection {
 			this.conn = DriverManager.getConnection("jdbc:mysql://" + ipadd + ":" +
 					port + "/" + database, username, password);
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.out.println("Loi phan mem");
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.out.println("Loi ket noi den may chu CSDL");
 		}

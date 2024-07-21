@@ -59,7 +59,7 @@ public class KyBinh extends NhanVat {
 	    @Override
 	    public void tanCong() {
 	        String attackDescription;
-	        if (soNamDaoTao >= 5) {
+	        if (soNamDaoTao >= 10) {
 	            if (getVuKhi().laVuKhiManh()) {
 	                attackDescription = "Kỵ Binh với kinh nghiệm và sức mạnh vượt trội, tấn công với " + getVuKhi().getTen() + " vô cùng mãnh liệt!";
 	            } else {
